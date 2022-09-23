@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    font-family: 'Roboto Mono', monospace;
+}
+.container-row
+{
+    display: flex;
+    flex-direction: row; /* Por defecto ya es así */
+    flex-wrap: wrap; /* en WRAP respetara el tamaño de los hijos si es que fueron definidor y NOWRAP no los respetará */
+    justify-content: space-between;
+    background-color: white;
+}
+.container-logos
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 1em;
+}
+.titulo
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1em;
+}
+.titulo h1
+{
+    font-family: Lobster;
+}
+.titulo-img
+{
+    width: 70px;
+    height: 70px;
+}
+.container-sign
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1em;
+}
+.boton
+{
+    margin: 0px 20px 0px 0px;
+    padding: 10px;
+    border-color: #1E3932;
+    border-radius: 2em;
+    background-color: white;
+    color: black;
+    border-style: solid;
+    text-decoration: none;
+}
+.boton:hover
+{
+    background-color: #c0c0c0;
+}
+.btn-a
+{
+    text-decoration: none;
+    color: black;
+}
+.img-logos
+{
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+}
+.lista
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.lista li a
+{
+    text-decoration: none;
+    color: white;
+}
+.lista li a:hover
+{
+    color: black;
+}
+.container-nav
+{
+    background-color: #1E3932;
+    padding: 20px;
+}
+.container-main img
+{
+    width: 100%;
+}
+#fav
+{
+    margin: 30px 0px 0px 0px;
+    text-align: center;
+}
+.container-fav
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.fav
+{
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.fav a
+{
+    text-decoration: none;
+    color: black;
+}
+.fav img
+{
+    width: 80%;
+}
+.container-fav p
+{
+    text-align: center;
+}
+.precios
+{
+    background-color: #1E3932;
+    margin: 10px 40px 10px 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.precios:hover
+{
+    background-color: #f8f5f2;
+}
+.container-footer
+{
+    background-color: #f8f5f2;
+    padding: 10px 50px 10px 50px;
+}
+.f0
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px 0px 0px 0px;
+}
+.footer
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    line-height: 1.8;
+}
+.lista-f
+{
+    list-style: none;
+}
+.lista-f a
+{
+    text-decoration: none;
+    color: black;
+}
+.lista-f img
+{
+    width: 100px;
+    height: 100px;
+}
+div h6
+{
+    text-align: center;
+}

@@ -4,57 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Inicio | CAFECAT</title>
+    
+    <!-- Ícono para la página -->
     <link rel="icon" type="image/x-icon" href="img/gato.png">
-    <title>CafeCat</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <!-- íconos para fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cd280c1b0e.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-
-    <div class="container-row">
-        <div class="container-logos">
-            <ul class="lista">
-                <li><a href="#"><img class="img-logos" src="img/facebook.jpeg" alt="facebook_foto"></a></li>
-                <li><a href="#"><img class="img-logos" src="img/instagram.png" alt="instagram_foto"></a></li>
-                <li><a href="#"><img class="img-logos" src="img/wasap.jpg" alt="wasap_foto"></a></li>
-                <li><a href="#"><img class="img-logos" src="img/gmail.jpg" alt="gmail_foto"></a></li>
-            </ul>
-        </div>
-
-        <div class="titulo">
-            <h1>
-                <b>CAFETERÍA DON GATO</b>
-            </h1>
-            <img class="titulo-img" src="img/gato.png" alt="gato_foto">
-        </div>
+    <!-- Cabecera / Títulos -->
+    <header id="header" class="header" style="margin: 20px 0px 20px 195px;">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <img src="img/logo.jpg" id="logo">
+                </div>
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu" style="display: none;">
+                                <img src="img/cart.png" id="img-carrito">
+                                <div id="carrito">
+                                        
+                                        <table id="lista-carrito" class="u-full-width">
+                                            <thead>
+                                                <tr>
+                                                    <th>Imagen</th>
+                                                    <th>Nombre</th>
+                                                    <th>Precio</th>
+                                                    <th>Cantidad</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody></tbody>
+                                        </table>
     
-        <div class="container-sign">
-            <div>
-                <button class="boton"><b><a href="#" class="btn-a">LOG IN</a></b></button>
-            </div>
-            <div>
-                <button class="boton"><b><a href="#" class="btn-a">SIGN UP</a></b></button>
-            </div>
+                                        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                                </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
         </div>
-    </div>
+    </header>
+    <!-- Fin Cabecera / Títulos -->
 
-    <nav class="container-nav">
+    <!-- Barra de navegación -->
+    <nav class="container-nav" style="padding-bottom: 30px;">
         <ul class="lista">
-            <li><a href="#"><b>BEBIDAS</b></a></li>
-            <li><a href="#"><b>ALIMENTOS</b></a></li>
-            <li><a href="#"><b>PAKS Y BOXES</b></a></li>
-            <li><a href="#"><b>MERCH Y CAFE EN GRANO</b></a></li>
+            <li><i class="fa-solid fa-chevron-left"></i></li>
+            <li><a href=".\index.html">INICIO</a></li>
+            <li><a href=".\bebidas.html">BEBIDAS</a></li>
+            <li><a href=".\alimentos.html">ALIMENTOS</a></li>
+            <li><a href="#">PAKS Y BOXES</a></li>
+            <li><a href="#">MERCH Y CAFE EN GRANO</a></li>
+            <li><i class="fa-solid fa-chevron-right"></i></li>
         </ul>
     </nav>
+    <!-- Fin de Barra de navegación -->
 
+    <!-- Carrusel -->
     <div class="container-main">
         <img src="img/cafeteria.png" alt="cafeteria_foto">
     </div>
+    <!-- Fin de Carrusel -->
 
+    <!-- Main -->
+    <div class="container-descripcion">
+        <div class="subcontainer-descripcion">
+            <p class="main-titulo">Nuestro caf&eacute;</p>
+            <p class="main-parrafo">Siempre ha sido y será una cuestión de calidad. Nos apasiona saber que tenemos un compromiso socialmente, responsable con los proveedores de los mejores granos de café, esmerarnos en tostar los granos y mejorar la vida de la gente que los cultiva. Nuestro profundo interés en todos estos aspectos hace que nuestro trabajo jamás termine.</p>
+            <div class="main-container-img">
+                <img src="img/cafe.png" alt="cafe" class="main-image">
+            </div>
+        </div>
+        <div class="subcontainer-descripcion">
+            <p class="main-titulo">Nuestros partners</p>
+            <p class="main-parrafo">Se nos llama partners, por que lo que hacemos no es sólo un trabajo, es nuestra pasión. Juntos, adoptamos la diversidad para crear un lugar que nos permita a cada uno ser auténtico. Siempre nos tratamos con respeto y dignidad. Nos valoramos de acuerdo a este principio.</p>
+            <div class="main-container-img">
+                <img src="img/partner.png" alt="partner" class="main-image">
+            </div>
+        </div>
+        <div class="subcontainer-descripcion">
+            <p class="main-titulo">Nuestros clientes</p>
+            <p class="main-parrafo">Cuando nos entregamos de lleno a lo que hacemos, nos relacionamos con nuestros clientes, reímos con ellos y les levantamos el ánimo, aunque sea por un instante. Es cierto que comenzamos nuestro trabajo con la promesa de una bebida preparada a la perfección, pero es mucho más que eso. En realidad, se trata de relacionarnos con las personas.</p>
+            <div class="main-container-img">
+                <img src="img/clientes.webp" alt="tienda" class="main-image">
+            </div>
+        </div>
+    </div>
+    <!-- Fin Main -->
+
+    <!-- Sección Favoritos -->
     <h1 id="fav"><b>TUS FAVORITOS</b></h1>
     <div class="container-fav">
         <div class="fav">
             <a href="#">
-                <img src="img/MOCHA_FRAPP_V2.png" alt="MOCHA_FRAPP_V2_foto">
+                <img src="img/Avellana_Caramelo_Frappuccino_v1.png" alt="MOCHA_FRAPP_V2_foto">
                 <p><b>Mocha Frappuccino</b></p>
                 <div class="precios">
                     <p><b>ORDENAR DESDE</b></p>
@@ -74,7 +123,7 @@
         </div>
         <div class="fav">
             <a href="#">
-                <img src="img/VAINILLA_LATTE_V2.png" alt="VAINILLA_LATTE_V2_foto">
+                <img src="img/Avellana_Caramelo_Frappuccino_v1.png" alt="VAINILLA_LATTE_V2_foto">
                 <p><b>Vainilla Latte</b></p>
                 <div class="precios">
                     <p><b>ORDENAR DESDE</b></p>
@@ -83,7 +132,9 @@
             </a>
         </div>
     </div>
+    <!-- Fin de Sección Favoritos -->
     
+    <!-- Sección Footer -->
     <footer class="container-footer">
         <div>
             <p><b>¿Quieres estar al tanto de nuestras promociones y beneficios?</b></p>
@@ -96,7 +147,7 @@
 
         <div class="footer">
             <div class="f1">
-                <h3><b>SOBRE NOSOTROS</b></h3>
+                <h3 style="font-size: 30px;"><b>SOBRE NOSOTROS</b></h3>
                 <ul class="lista-f">
                     <li><a href="#">NUESTRA MISIÓN</a></li>
                     <li><a href="#">TIENDAS, HORARIOS, Y ZONA DE COBERTURA</a></li>
@@ -105,8 +156,7 @@
                 </ul>
             </div>
             <div class="f1">
-                <h3><b>CONTACTO Y ATENCIÓN AL CLIENTE</b></h3>
-                <h3><b> CLIENTE</b></h3>
+                <h3 style="font-size: 30px;"><b>CONTACTO Y ATENCIÓN AL <br>CLIENTE</b></h3>
                 <ul class="lista-f">
                     <li><a href="#">WHATSAPP (01)505-0505</a></li>
                     <li><a href="#">TELÉFONO LIMA: (01)505-0050</a></li>
@@ -116,7 +166,7 @@
                 </ul>
             </div>
             <div class="f1">
-                <h3><b>POLÍTICAS Y TÉRMINOS</b></h3>
+                <h3 style="font-size: 30px;"><b>POLÍTICAS Y TÉRMINOS</b></h3>
                 <ul class="lista-f">
                     <li><a href="#">POLÍTICAS DE PRIVACIDAD</a></li>
                     <li><a href="#">POLÍTICAS DE DELIVERY Y PICK UP</a></li>
@@ -133,6 +183,8 @@
             <h6><b>©2022 Jean Pool Oliver Yantas Inocente. Todos los Derechos Reservados.</b></h6>
         </div>
     </footer>
+    <!-- Fin de Sección Footer -->
 
+    <script src="js/app.js"></script>
 </body>
 </html>

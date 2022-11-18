@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentos | CAFECAT</title>
+
+    <!-- Librería de jQuery --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>    
+    <!-- Ícono para la página -->
+    <link rel="icon" type="image/x-icon" href="img/gato.png">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/skeleton.css" type="text/css">
+    <link rel="stylesheet" href="css/custom.css" type="text/css">
+    <!-- íconos para fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cd280c1b0e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Cabecera / Títulos -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <img src="img/logo.jpg" id="logo">
+                </div>
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                                <img src="img/cart.png" id="img-carrito">
+                                <div id="carrito">
+                                        
+                                        <table id="lista-carrito" class="u-full-width">
+                                            <thead>
+                                                <tr>
+                                                    <th>Imagen</th>
+                                                    <th>Nombre</th>
+                                                    <th>Precio</th>
+                                                    <th>Cantidad</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody></tbody>
+                                        </table>
+    
+                                        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                                </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </header>
+    <!-- Fin Cabecera / Títulos -->
+
+    <!-- Barra de navegación -->
+    <nav class="container-nav">
+        <ul class="lista">
+            <li><i class="fa-solid fa-chevron-left"></i></li>
+            <li><a href=".\index.html">INICIO</a></li>
+            <li><a href=".\bebidas.html">BEBIDAS</a></li>
+            <li><a href=".\alimentos.html">ALIMENTOS</a></li>
+            <li><a href="#">PAKS Y BOXES</a></li>
+            <li><a href="#">MERCH Y CAFE EN GRANO</a></li>
+            <li><i class="fa-solid fa-chevron-right"></i></li>
+        </ul>
+    </nav>
+    <!-- Fin de Barra de navegación -->
+
+    <!-- Con errores -->
+    <div class="container-bebidas">
+        <button id="btn-frapuccino" class="precios" style="cursor: pointer;background: none;color: black;border-color: black;margin: 0px;padding: 0px;">Pastries</button>
+        <button id="btn-espressoCaliente" class="precios" style="cursor: pointer;background: none;color: black;border-color: black;margin: 0px;padding: 0px;">Postres</button>
+        <button id="btn-espressoFrio" class="precios" style="cursor: pointer;background: none;color: black;border-color: black;margin: 0px;padding: 0px;">Sandwiches</button>
+            
+            <form action="" id="formulario-frapuccino" style="display: none;">
+                <div class="container-fav">
+                    <div class="fav">
+                        <table>
+                            <tr>
+                                <th colspan="2"><img src="img/GALLETA_RED_VELVET_V3.png" alt="MOCHA_FRAPP_V2_foto"></th>
+                            </tr>
+                            <tr>
+                                <th colspan="2"><p><b>Galleta Red Velvet</b></p></th>
+                                <input type="hidden" id="producto1" value="Galleta Red Velvet">
+                            </tr>
+                            <tr>
+                                <th colspan="2">ORDENAR DESDE</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">S/ <input type="number" value="20" name="precio1" id="precio1" readonly></th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Stock: <input type="number" value="10" name="stock1" id="stock1" readonly></th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Lorem ipsum Lorem ipsum Lorem ipsum.</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Cantidad: <input type="number" min="0" max="20" name="cantidad1" id="cantidad1" required></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="fav">
+                        <table>
+                            <tr>
+                                <th colspan="2"><img src="img/MUFFIN_RED_VELVET_V3.png" alt="Merry_Strawberry_Mocha_Frappuccino_v1_foto"></th>
+                            </tr>
+                            <tr>
+                                <th colspan="2"><p><b>Muffin Red Velvet</b></p></th>
+                                <input type="hidden" id="producto2" value="Muffin Red Velvet">
+                            </tr>
+                            <tr>
+                                <th colspan="2">ORDENAR DESDE</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">S/ <input type="number" value="20" name="precio2" id="precio2" readonly></th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Stock: <input type="number" value="10" name="stock2" id="stock2" readonly></th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Lorem ipsum Lorem ipsum Lorem ipsum.</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Cantidad: <input type="number" min="0" max="20" name="cantidad2" id="cantidad2" required></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <input type="submit" class="boton" style="cursor: pointer;" value="Agregar al Carrito">
+            </form>
+            <form action="" id="formulario-espressoCaliente" style="display: none;">
+                <div class="container-fav">
+                    <div class="fav">
+                        <table>
+                            <tr>
+                                <th colspan="2"><img src="img/CINNAMON_PISTACCIO_V3.png" alt="MOCHA_FRAPP_V2_foto"></th>
+                            </tr>
+                            <tr>
+                                <th colspan="2"><p><b>Cinnamon Pistaccio Swirl</b></p></th>
+                                <input type="hidden" id="producto1" value="Cinnamon Pistaccio Swirl">
+                            </tr>
+                            <tr>
+                                <th colspan="2">ORDENAR DESDE</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">S/ <input type="number" value="20" name="precio1" id="precio1" readonly></th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Stock: <input type="number" value="10" name="stock1" id="stock1" readonly></th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Lorem ipsum Lorem ipsum Lorem ipsum.</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Cantidad: <input type="number" min="0" max="20" name="cantidad1" id="cantidad1" required></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="fav">
+                        <table>
+                            <tr>
+                                <th colspan="2"><img src="img/CINNAMON_PISTACCIO_V3.png" alt="Merry_Strawberry_Mocha_Frappuccino_v1_foto"></th>
+                            </tr>
+                            <tr>
+                                <th colspan="2"><p><b>Cake Pop Vainilla</b></p></th>
+                                <input type="hidden" id="producto2" value="Cake Pop Vainilla">
+                            </tr>
+                            <tr>
+                                <th colspan="2">ORDENAR DESDE</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">S/ <input type="number" value="20" name="precio2" id="precio2" readonly></th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Stock: <input type="number" value="10" name="stock2" id="stock2" readonly></th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Lorem ipsum Lorem ipsum Lorem ipsum.</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Cantidad: <input type="number" min="0" max="20" name="cantidad2" id="cantidad2" required></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <input type="submit" class="boton" style="cursor: pointer;" value="Agregar al Carrito">
+            </form>
+            <form action="" id="formulario-espressoFrio" style="display: none;">
+                <div class="container-fav">
+                    <div class="fav">
+                        <table>
+                            <tr>
+                                <th colspan="2"><img src="img/SANDWICH_CHICKEN_PESTO_PARMESANO_V2.png" alt="Vainilla Cold brew_foto"></th>
+                            </tr>
+                            <tr>
+                                <th colspan="2"><p><b>Sandwich Chicken Pesto Parmesano</b></p></th>
+                                <input type="hidden" id="producto1" value="Sandwich Chicken Pesto Parmesano">
+                            </tr>
+                            <tr>
+                                <th colspan="2">ORDENAR DESDE</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">S/ <input type="number" value="20" name="precio1" id="precio1" readonly></th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Stock: <input type="number" value="10" name="stock1" id="stock1" readonly></th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Lorem ipsum Lorem ipsum Lorem ipsum.</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Cantidad: <input type="number" min="0" max="20" name="cantidad1" id="cantidad1" required></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="fav">
+                        <table>
+                            <tr>
+                                <th colspan="2"><img src="img/SANDWICH_DE_PAVITA_Y_QUESO_V2.png" alt="Cocoa Macchiatto Frío con bebida de avena_foto"></th>
+                            </tr>
+                            <tr>
+                                <th colspan="2"><p><b>Sandwich Pavita & Queso</b></p></th>
+                                <input type="hidden" id="producto2" value="Sandwich Pavita & Queso">
+                            </tr>
+                            <tr>
+                                <th colspan="2">ORDENAR DESDE</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">S/ <input type="number" value="20" name="precio2" id="precio2" readonly></th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Stock: <input type="number" value="10" name="stock2" id="stock2" readonly></th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Lorem ipsum Lorem ipsum Lorem ipsum.</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Cantidad: <input type="number" min="0" max="20" name="cantidad2" id="cantidad2" required></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <input type="submit" class="boton" style="cursor: pointer;" value="Agregar al Carrito">
+            </form>
+    </div>
+
+    <div class="container-carrito">
+        <div id="pedido-carrito"></div>
+    </div>
+
+
+
+    <!-- Sección Favoritos -->
+    <h1 id="fav"><b>TUS FAVORITOS</b></h1>
+    <div class="container-fav">
+        <div class="fav">
+            <a href="#">
+                <img src="img/Avellana_Caramelo_Latte_v1.png" alt="MOCHA_FRAPP_V2_foto">
+                <p><b>Mocha Frappuccino</b></p>
+                <div class="precios">
+                    <p><b>ORDENAR DESDE</b></p>
+                    <p><b>S/ 14.00</b></p>
+                </div>
+            </a>
+        </div>
+        <div class="fav">
+            <a href="#">
+                <img src="img/CHOCOLATE_CALIENTE_V2.png" alt="CHOCOLATE_CALIENTE_V2_foto">
+                <p><b>Chocolate Caliente</b></p>
+                <div class="precios">
+                    <p><b>ORDENAR DESDE</b></p>
+                    <p><b>S/ 12.00</b></p>
+                </div>
+            </a>
+        </div>
+        <div class="fav">
+            <a href="#">
+                <img src="img/Holiday_Cinnamon_Latte_v1.png" alt="VAINILLA_LATTE_V2_foto">
+                <p><b>Vainilla Latte</b></p>
+                <div class="precios">
+                    <p><b>ORDENAR DESDE</b></p>
+                    <p><b>S/ 11.50</b></p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Fin de Sección Favoritos -->
+    
+    <!-- Sección Footer -->
+    <footer class="container-footer">
+        <div>
+            <p><b>¿Quieres estar al tanto de nuestras promociones y beneficios?</b></p>
+            <p><b>¡Déjanos tu correo!</b></p>
+        </div>
+        <div class="f0">
+            <input class="boton" type="email" placeholder="E-mail">
+            <a href="#" class="boton"><b>SUSCRIBIRME</b></a>
+        </div>
+
+        <div class="footer">
+            <div class="f1">
+                <h3><b>SOBRE NOSOTROS</b></h3>
+                <ul class="lista-f">
+                    <li><a href="#">NUESTRA MISIÓN</a></li>
+                    <li><a href="#">TIENDAS, HORARIOS, Y ZONA DE COBERTURA</a></li>
+                    <li><a href="#">COBERTURA</a></li>
+                    <li><a href="#">STORIES</a></li>
+                </ul>
+            </div>
+            <div class="f1">
+                <h3><b>CONTACTO Y ATENCIÓN AL CLIENTE</b></h3>
+                <h3><b> CLIENTE</b></h3>
+                <ul class="lista-f">
+                    <li><a href="#">WHATSAPP (01)505-0505</a></li>
+                    <li><a href="#">TELÉFONO LIMA: (01)505-0050</a></li>
+                    <li><a href="#">TELÉFONO PROVINCIA: (044)779-009</a></li>
+                    <li><a href="#">COMPROBANTES ELECTRÓNICOS</a></li>
+                    <a href="#"><img src="img/libro-reclamaciones.png" alt="libro-reclamaciones-foto"></a>
+                </ul>
+            </div>
+            <div class="f1">
+                <h3><b>POLÍTICAS Y TÉRMINOS</b></h3>
+                <ul class="lista-f">
+                    <li><a href="#">POLÍTICAS DE PRIVACIDAD</a></li>
+                    <li><a href="#">POLÍTICAS DE DELIVERY Y PICK UP</a></li>
+                    <li><a href="#">TÉRMINOS Y CONDICIONES DE LA WEB</a></li>
+                    <li><a href="#">TÉRMINOS Y CONDICIONES DE PROMOCIONES</a></li>
+                    <li><a href="#">PROMOCIONES</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div>
+            <h6><b>©2022 Jean Pool Oliver Yantas Inocente. Todos los Derechos Reservados.</b></h6>
+        </div>
+    </footer>
+    <!-- Fin de Sección Footer -->
+
+    <script src="js/alimentos.js"></script>
+</body>
+</html>

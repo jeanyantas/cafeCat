@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bebidas | CAFECAT</title>
+
+    <!-- Ícono para la página -->
+    <link rel="icon" type="image/x-icon" href="img/gato.png">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- íconos para fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cd280c1b0e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <img src="img/logo.jpg" id="logo">
+                </div>
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                                <img src="img/cart.png" id="img-carrito">
+                                <div id="carrito">
+                                        
+                                        <table id="lista-carrito" class="u-full-width">
+                                            <thead>
+                                                <tr>
+                                                    <th>Imagen</th>
+                                                    <th>Nombre</th>
+                                                    <th>Precio</th>
+                                                    <th>Cantidad</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody></tbody>
+                                        </table>
+
+                                        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                                        <a href="#" id="pagar-carrito" class="button u-full-width" onclick="pasarela()">Pagar</a>
+                                </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav class="container-nav">
+        <ul class="lista">
+            <li><i class="fa-solid fa-chevron-left"></i></li>
+            <li><a href=".\index.html">INICIO</a></li>
+            <li><a href=".\bebidas.html">BEBIDAS</a></li>
+            <li><a href=".\alimentos.html">ALIMENTOS</a></li>
+            <li><a href="#">PAKS Y BOXES</a></li>
+            <li><a href="#">MERCH Y CAFE EN GRANO</a></li>
+            <li><i class="fa-solid fa-chevron-right"></i></li>
+        </ul>
+    </nav>
+    <!-- Fin de Barra de navegación -->
+
+    <div id="lista-productos" class="container">
+        <h1 id="encabezado" class="encabezado">Bebidas</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/Avellana_Caramelo_Frappuccino_v1.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Avellana Caramelo</h4>
+                        <p>Frapuccino</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$30  <span class="u-pull-right ">$20</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/Holiday_Cinnamon_Frappuccino_v1.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Holiday Cinnamon</h4>
+                            <p>Frapuccino</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$30  <span class="u-pull-right ">$20</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/Peppermint_Mocha_Latte_Frappuccino_v1.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Peppermint Mocha Latte</h4>
+                            <p>Frapuccino</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$30  <span class="u-pull-right ">$20</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/TOFFEE_NUT_LATTE_V2.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Toffee Nut Latte</h4>
+                        <p>Espresso Caliente</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$30  <span class="u-pull-right ">$20</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/Avellana_Caramelo_Latte_v1.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Avellana Caramelo Latte</h4>
+                            <p>Espresso Caliente</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$30  <span class="u-pull-right ">$20</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/Holiday_Cinnamon_Latte_v1.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Holiday Cinnamon Latte</h4>
+                            <p>Espresso Caliente</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$30  <span class="u-pull-right ">$20</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/Merry Strawberry Helado_v2.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Merry Strawberry Mocha Helado</h4>
+                        <p>Espresso Fr&iacute;o</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$30  <span class="u-pull-right ">$20</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/TOFFEE_NUT_HELADO_V2.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Toffee Nut Latte Helado</h4>
+                            <p>Espresso Fr&iacute;o</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$30  <span class="u-pull-right ">$20</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/Avellana_Caramelo_Latte_Helado_v1.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Avellana Caramelo Latte Helado</h4>
+                            <p>Espresso Fr&iacute;o</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$30  <span class="u-pull-right ">$20</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="img/ICED_AVELLANA_OATMILK_SHAKEN_ESPRESSO_ECOMMERCE.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Avellana Shaken con bebida de avena</h4>
+                            <p>Shaken Espresso</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$30  <span class="u-pull-right ">$20</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/ICED_CHOCOLATE_OATMILK_SHAKEN_ESPRESSO_ECOMMERCE.png" class="imagen-curso u-full-width">
+                            <div class="info-card">
+                                <h4>Chocolate Shaken con bebida de avena</h4>
+                                <p>Shaken Espresso</p>
+                                <img src="img/estrellas.png">
+                                <p class="precio">$30  <span class="u-pull-right ">$20</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/ICED_AVELLANA_OATMILK_SHAKEN_ESPRESSO_ECOMMERCE.png" class="imagen-curso u-full-width">
+                            <div class="info-card">
+                                <h4>Avellana Shaken con bebida de avena</h4>
+                                <p>Shaken Espresso</p>
+                                <img src="img/estrellas.png">
+                                <p class="precio">$30  <span class="u-pull-right ">$20</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+        </div> <!--.row-->
+    </div>  
+
+    <!-- Sección Footer -->
+    <footer class="container-footer">
+        <div>
+            <p><b>¿Quieres estar al tanto de nuestras promociones y beneficios?</b></p>
+            <p><b>¡Déjanos tu correo!</b></p>
+        </div>
+        <div class="f0">
+            <input class="boton" type="email" placeholder="E-mail">
+            <a href="#" class="boton"><b>SUSCRIBIRME</b></a>
+        </div>
+
+        <div class="footer">
+            <div class="f1">
+                <h3 style="font-size: 30px;"><b>SOBRE NOSOTROS</b></h3>
+                <ul class="lista-f">
+                    <li><a href="#">NUESTRA MISIÓN</a></li>
+                    <li><a href="#">TIENDAS, HORARIOS, Y ZONA DE COBERTURA</a></li>
+                    <li><a href="#">COBERTURA</a></li>
+                    <li><a href="#">STORIES</a></li>
+                </ul>
+            </div>
+            <div class="f1">
+                <h3 style="font-size: 30px;"><b>CONTACTO Y ATENCIÓN AL CLIENTE</b></h3>
+                <ul class="lista-f">
+                    <li><a href="#">WHATSAPP (01)505-0505</a></li>
+                    <li><a href="#">TELÉFONO LIMA: (01)505-0050</a></li>
+                    <li><a href="#">TELÉFONO PROVINCIA: (044)779-009</a></li>
+                    <li><a href="#">COMPROBANTES ELECTRÓNICOS</a></li>
+                    <a href="#"><img src="img/libro-reclamaciones.png" alt="libro-reclamaciones-foto"></a>
+                </ul>
+            </div>
+            <div class="f1">
+                <h3 style="font-size: 30px;"><b>POLÍTICAS Y TÉRMINOS</b></h3>
+                <ul class="lista-f">
+                    <li><a href="#">POLÍTICAS DE PRIVACIDAD</a></li>
+                    <li><a href="#">POLÍTICAS DE DELIVERY Y PICK UP</a></li>
+                    <li><a href="#">TÉRMINOS Y CONDICIONES DE LA WEB</a></li>
+                    <li><a href="#">TÉRMINOS Y CONDICIONES DE PROMOCIONES</a></li>
+                    <li><a href="#">PROMOCIONES</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div>
+            <h6><b>©2022 Jean Pool Oliver Yantas Inocente. Todos los Derechos Reservados.</b></h6>
+        </div>
+    </footer>
+    <!-- Fin de Sección Footer -->
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
